@@ -1,0 +1,46 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilos para o DatePicker */
+  .react-datepicker {
+    font-family: inherit;
+    border: 1px solid #ddd;
+  }
+  
+  .react-datepicker__header {
+    background-color: #2E8B57;
+    color: white;
+  }
+  
+  .react-datepicker__current-month,
+  .react-datepicker__day-name {
+    color: white;
+  }
+  
+  .react-datepicker__day--selected {
+    background-color: #2E8B57;
+  }
+  
+  /* Estilos para a galeria */
+  .custom-gallery .image-gallery-slide img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Responsividade básica */
+  @media (max-width: 768px) {
+    .react-datepicker {
+      width: 100%;
+    }
+  }
