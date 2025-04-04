@@ -1,54 +1,91 @@
-# React + TypeScript + Vite
+Sistema de Reservas para Hotel
+📝 Descrição
+Este é um sistema de reservas completo para hotéis, desenvolvido em React com TypeScript. O formulário permite que os hóspedes realizem reservas, incluindo informações pessoais, datas de estadia, detalhes do quarto, pets e hóspedes extras.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Funcionalidades Principais
+Formulário de reserva completo com validação em tempo real
 
-Currently, two official plugins are available:
+Cálculo automático de valores baseado em:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tipo de quarto
 
-## Expanding the ESLint configuration
+Número de noites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Hóspedes extras
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Kits adicionais
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Pets
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Integração com WhatsApp para envio automático da reserva
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Design responsivo que funciona em dispositivos móveis e desktop
+
+Seções organizadas para melhor experiência do usuário
+
+🛠 Tecnologias Utilizadas
+React.js
+
+TypeScript
+
+React Hook Form (para gerenciamento de formulários)
+
+Yup (para validação de dados)
+
+Styled Components (para estilização)
+
+React DatePicker (para seleção de datas)
+
+🚀 Como Executar o Projeto
+Pré-requisitos
+
+Node.js (versão 14 ou superior)
+
+npm
+Instalação
+
+
+# Clone o repositório
+git clone [URL_DO_REPOSITORIO]
+
+# Instale as dependências
+npm install
+
+Execução
+npm start
+
+Build para produção
+npm run build
+
+Design System
+O sistema utiliza uma paleta de cores consistente:
+
+Primária: #DAA520 (Dourado)
+
+Secundária: #2c3e50 (Azul escuro)
+
+Erros: #e74c3c (Vermelho)
+
+Sucesso: #2E8B57 (Verde)
+
+✅ Validações Implementadas
+Formato de CPF (000.000.000-00)
+
+Datas de check-in não podem ser no passado
+
+Check-out deve ser após check-in
+
+Mínimo 1 noite de hospedagem
+
+Aceite obrigatório dos termos para pets
+
+Validação de campos obrigatórios
+
+📱 Responsividade
+O formulário foi projetado para funcionar em:
+
+Desktop (acima de 768px)
+
+Tablets (entre 480px e 768px)
+
+Celulares (abaixo de 480px)
